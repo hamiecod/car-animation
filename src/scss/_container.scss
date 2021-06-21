@@ -1,0 +1,74 @@
+body{
+    animation-name: bodyShake;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.container{
+  &__sky{
+    height: 100vh;
+    width: 100vw;
+    background: url(./assets/background.jpg) no-repeat;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+
+    &-greenery{
+      height:100vh;
+      width: 100vw;
+      background: url(./assets/greenery.png);
+      background-size: cover;
+      position: absolute;
+      top: -26vh;
+    }
+    &-track{
+      height:60vh;
+      width: 800vw;
+      background: url(./assets/track.png);
+      background-repeat: repeat-x;
+      position: absolute;
+      top: 63vh;
+      animation-name: trackMove;
+      animation-iteration-count: infinite;
+      animation-duration: .7s;
+      animation-timing-function: linear;
+    }
+    &-car{
+      height: 4rem;
+      width: 17rem;
+      background: url(./assets/car_body.png);
+      background-size: cover;
+      position: absolute;
+      top: 66vh;
+      left: 18.5779vw;
+      animation-name: carShake;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      &__wheel{
+        img{
+          position: absolute;
+          top: 1.8rem;
+          width: 3.4rem;
+          height: 3.3rem;
+          animation-name: wheelRotation;
+          animation-iteration-count: infinite;
+          animation-duration: .3s;
+          animation-timing-function: linear;
+        }
+      }
+      #car__wheel-left{
+        img{
+          left: 2rem;
+        }
+      }
+      #car__wheel-right{
+        img{
+          left: 10.5rem;
+        }
+      }
+    }
+  }
+}
+

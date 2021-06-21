@@ -1,0 +1,41 @@
+@keyframes wheelRotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes trackMove{
+  0%{
+    transform: translateX(0vw);
+  }
+  100%{
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes carShake{
+  0%{
+    transform: translateY(-0.4rem);
+  }
+  50%{
+    transform: translateY(0.4rem);
+  }
+  100%{
+    transform: translateY(-0.4rem);
+  }
+}
+
+@keyframes bodyShake{
+  0%{
+    transform: translateY(-1rem);
+  }
+  50%{
+    transform: translateY(1rem);
+  }
+  100%{
+    transform: translateY(-1rem);
+  }
+}

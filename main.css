@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+body {
+  -webkit-animation-name: bodyShake;
+          animation-name: bodyShake;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.container__sky {
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/background.jpg) no-repeat;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.container__sky-greenery {
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/greenery.png);
+  background-size: cover;
+  position: absolute;
+  top: -26vh;
+}
+
+.container__sky-track {
+  height: 60vh;
+  width: 800vw;
+  background: url(./assets/track.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 63vh;
+  -webkit-animation-name: trackMove;
+          animation-name: trackMove;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.container__sky-car {
+  height: 4rem;
+  width: 17rem;
+  background: url(./assets/car_body.png);
+  background-size: cover;
+  position: absolute;
+  top: 66vh;
+  left: 18.5779vw;
+  -webkit-animation-name: carShake;
+          animation-name: carShake;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.container__sky-car__wheel img {
+  position: absolute;
+  top: 1.8rem;
+  width: 3.4rem;
+  height: 3.3rem;
+  -webkit-animation-name: wheelRotation;
+          animation-name: wheelRotation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.container__sky-car #car__wheel-left img {
+  left: 2rem;
+}
+
+.container__sky-car #car__wheel-right img {
+  left: 10.5rem;
+}
+
+@-webkit-keyframes wheelRotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheelRotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes trackMove {
+  0% {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
+@keyframes trackMove {
+  0% {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
+@-webkit-keyframes carShake {
+  0% {
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+  50% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  100% {
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+}
+
+@keyframes carShake {
+  0% {
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+  50% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  100% {
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+}
+
+@-webkit-keyframes bodyShake {
+  0% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes bodyShake {
+  0% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+/*# sourceMappingURL=main.css.map */
