@@ -5,9 +5,10 @@ This repository contains the code files and assets for a simple car animation ma
 I made an awesome Lamborghini :sunglasses: animation using just HTML, SCSS and Javascript
 
 ### Demo
+![Demo of the animation](./assets/demo.gif)
 
 ### Links
-- [Live Site URL]()
+- [Live Site URL](https://lamboanimation.netlify.app)
 
 ### My Process
 - Uploaded the assets(the images, sounds, etc.)
